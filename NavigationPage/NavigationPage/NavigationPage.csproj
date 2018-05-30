@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\me.png" />
+    <None Remove="Images\Slide1.JPG" />
+    <None Remove="Images\Slide2.JPG" />
+    <None Remove="Images\Slide3.JPG" />
+    <None Remove="Images\Slide4.JPG" />
+    <None Remove="Images\Slide5.JPG" />
+    <None Remove="Images\Slide6.JPG" />
+    <None Remove="Images\Slide7.JPG" />
+    <None Remove="Images\Slide8.JPG" />
+    <None Remove="Images\Slide9.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\me.png" />
+    <EmbeddedResource Include="Images\Slide1.JPG" />
+    <EmbeddedResource Include="Images\Slide2.JPG" />
+    <EmbeddedResource Include="Images\Slide3.JPG" />
+    <EmbeddedResource Include="Images\Slide4.JPG" />
+    <EmbeddedResource Include="Images\Slide5.JPG" />
+    <EmbeddedResource Include="Images\Slide6.JPG" />
+    <EmbeddedResource Include="Images\Slide7.JPG" />
+    <EmbeddedResource Include="Images\Slide8.JPG" />
+    <EmbeddedResource Include="Images\Slide9.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Page2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
